@@ -1,6 +1,6 @@
 ```
  610  openssl genrsa -out vagrant.pem 2048
-  611  ls
+  611  openssl  req -new -key vagrant.pem -out vagrant-csr.pem -subj "/CN=amit/O=training"
   612  openssl x509 -req -in vagrant-csr.pem -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out vagrant.crt -days 100
   613  ls
   614  kubectl config set-cluster kubernetes --server=https://172.31.0.100:6443 --certificate-authority=/etc/kubernetes/pki/ca.crt --embed-certs=true  --kubeconfig=vagrant.kubeconfig
