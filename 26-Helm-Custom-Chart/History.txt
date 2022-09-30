@@ -53,3 +53,30 @@
  1683  helm history my-web-app
 
 ```
+
+Exp2
+```
+1690  git add . ; git commit -m "25-Helm" ; git push
+ 1691  ls
+ 1692  cd 26-Helm-Custom-Chart/
+ 1693  ls
+ 1694  helm create my-python-webapp
+ 1695  ls
+ 1696  cd my-python-webapp/
+ 1697  ls
+ 1698  vim values.yaml
+ 1699  ls
+ 1700  cd ..
+ 1701  ls
+ 1702  helm install mypyapp ./my-python-webapp --dry-run
+ 1703  ls
+ 1704  vim my-python-webapp/templates/deployment.yaml
+ 1705  ls
+ 1706  vim my-python-webapp/values.yaml
+ 1707  helm install mypyapp ./my-python-webapp --dry-run
+ 1708  helm install mypyapp ./my-python-webapp
+ 1709  helm list
+ 1710  kubectl  get pods
+ 1711  kubectl  get svc
+ 1712  ls
+```
