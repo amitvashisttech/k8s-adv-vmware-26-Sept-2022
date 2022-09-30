@@ -1,0 +1,55 @@
+# Exp1 
+```
+1633  mkdir 26-Helm-Custom-Chart
+ 1634  ls
+ 1635  cd 26-Helm-Custom-Chart/
+ 1636  ls
+ 1637  helm create my-tiny-web
+ 1638  ls
+ 1639  cd my-tiny-web/
+ 1640  ls
+ 1641  cd charts/
+ 1642  ls
+ 1643  cd ..
+ 1644  ls
+ 1645  cat Chart.yaml
+ 1646  vim Chart.yaml
+ 1647  ls
+ 1648  cd templates/
+ 1649  ls
+ 1650  cat deployment.yaml
+ 1651  ls
+ 1652  cd ..
+ 1653  ls
+ 1654  vim values.yaml
+ 1655  cd .. ; helm install my-web-app my-tiny-web --dry-run
+ 1656  helm install my-web-app my-tiny-web
+ 1657  kubectl  get pods
+ 1658  kubectl  delete pod pod-1 pod-2
+ 1659  kubectl  get pods
+ 1660  kubectl  get svc
+ 1661  helm list
+ 1662  ls
+ 1663  vim my-tiny-web/Chart.yaml
+ 1664  vim my-tiny-web/values.yaml
+ 1665  helm list
+ 1666  helm --help
+ 1667  helm upgrade --help
+ 1668  helm  list
+ 1669  helm upgrade  my-web-app ./my-tiny-web
+ 1670  helm list
+ 1671  kube
+ 1672  kubectl  get svc
+ 1673  kubectl get pods
+ 1674  vim my-tiny-web/values.yaml
+ 1675  vim my-tiny-web/Chart.yaml
+ 1676  helm upgrade  my-web-app ./my-tiny-web
+ 1677  helm list
+ 1678  kubectl  get svc
+ 1679  kubectl  get pods
+ 1680  helm list
+ 1681  helm history my-web-app
+ 1682  helm rollback my-web-app
+ 1683  helm history my-web-app
+
+```
